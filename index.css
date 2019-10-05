@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    font-family: 'Source Serif Pro', serif;
 }
 
 header {
@@ -8,9 +9,15 @@ header {
     justify-content: center;
     align-items: center;
     border: 1px solid black;
-    background: gray;
+    background-image: linear-gradient( #b21f1f
+    ,#1a2a6c, black);
     text-align: center;
     height: 20em;
+    color: white;
+}
+
+h1 {
+    font-size: 32px;
 }
 
 .info {
@@ -18,9 +25,11 @@ header {
     flex-direction: row;
     justify-content: center;
     border: 1px solid black;
-    background: lightgray;
+    background: black;
     align-items: center; 
     text-align: center;
     height: 10em;
+    color: white;
+    font-size: 20px;
 }
 
