@@ -1,0 +1,26 @@
+* {
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    background: gray;
+    text-align: center;
+    height: 20em;
+}
+
+.info {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border: 1px solid black;
+    background: lightgray;
+    align-items: center; 
+    text-align: center;
+    height: 10em;
+}
+
