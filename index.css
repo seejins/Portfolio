@@ -1,7 +1,6 @@
 * {
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
-
     border-radius: 15px;
 }
 
@@ -34,7 +33,10 @@ header{
 }
 
 body {
-    background: black;
+    background: fixed black;;
+    background-image: url("images/wallpaper.jpg");
+    background-size: cover;
+    
 }
 
 
@@ -56,9 +58,6 @@ h1, h2, h3 {
 }
 
 .section {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
     border: 1px solid black;
     background: white;
     align-items: center; 
@@ -84,11 +83,6 @@ h1, h2, h3 {
     border-radius: 0px;
 }
 
-p {
-    line-height: 22px;
-    font-size: 16px;
-}
-
 .row {
     display: flex;
     flex-direction: row;
@@ -110,6 +104,22 @@ footer {
     margin: 5px;
 }
 
+a {
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+a:hover, a:active {
+    background-color: rgba(136, 136, 136, 0.5);
+    border-radius: 0px;
+}
+
+.description {
+    padding: 15px;
+    font-size: 16px;
+    line-height: 22px;
+}
+
 @media screen and (min-width: 750px) {
 
     .project-wrapper,
@@ -126,6 +136,7 @@ footer {
         width: 80%;
         margin: auto;
     }
+
 }
 
 @media screen and (min-width: 1000px) {
@@ -148,5 +159,13 @@ footer {
         width: 50%;
         margin-left: 10%;
     }
-    
+
+    .header-content {
+        padding: 40px;
+    }
+
+    h3, p {
+        font-size: 18px;
+    }
+
 }
