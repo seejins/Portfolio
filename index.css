@@ -1,82 +1,48 @@
-* {
+*, *::before, *::after  {
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
-    border-radius: 15px;
 }
 
-header{
-    padding-bottom: 50px;
-    padding-top: 50px;
+.header {
+    background-image: url('images/wallpaper.jpg');
+    padding-top: 10rem;
+    padding-bottom: 10rem;
     text-align: center;
-}
-
-.header-content{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    color: white;
-    margin-bottom: 20px;
-}
-
-.header h1,
-.header h2 {
-    line-height: 40px;
+    color: #fff;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    background-size: cover;
     margin: 0;
-    font-weight: lighter;
 }
 
-.header-bio {
-    color: white;
-    padding-left: 20px;
-    padding-right: 20px;
-    margin-top: 50px;
+.img-fluid {
+    width: 100%;
+    heigth: auto;
 }
 
 body {
-    background: fixed black;;
-    background-image: url("images/wallpaper.jpg");
-    background-size: cover;
-    
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: left;
+    color: #212529;
+    background-color: white;
+    font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
-
-h1 {
-    font-size: 40px;
-}
-
-h2 {
-    font-size: 18px;
-}
-
-h3 {
-    font-size: 16px;
-    color: gray;
-}
 
 h1, h2, h3 {
-    font-family: 'Domine', sans-serif;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 0.5rem;
+    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
-.section {
-    border: 1px solid black;
-    background: white;
-    align-items: center; 
-    text-align: center;
-    max-height: auto;
-    color: black;
-    font-size: 20px;
-    
+a {
+    text-decoration: none;
+    background-color: white; 
 }
-
-.project-wrapper,
-.section,
-.header {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 350px;
-}
-
 
 .screenshot img{
     max-width: 80%;
@@ -90,21 +56,7 @@ h1, h2, h3 {
     border-radius: 0px;
 }
 
-.icons img {
-    max-width: 50px;
-    margin: 5px;
-}
-
-footer {
-    margin-top: 20px;
-}
-
-.footer img {
-    max-width: 20px;
-    margin: 5px;
-}
-
-a {
+/* a {
     transition: 0.3s;
     text-decoration: none;
 }
@@ -112,7 +64,7 @@ a {
 a:hover, a:active {
     background-color: rgba(136, 136, 136, 0.5);
     border-radius: 0px;
-}
+} */
 
 .description {
     padding: 15px;
@@ -120,52 +72,323 @@ a:hover, a:active {
     line-height: 22px;
 }
 
+.modal-bg,
+.milal-app-bg,
+.get-meals-bg,
+.trail-finder-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s;
+}
+
+.bg-active {
+    visibility: visible;
+    opacity: 1;
+    overflow: hidden;
+
+}
+
+.modal {
+    background-color: white;
+    width: 50%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.modal button {
+    padding: 10px 30px;
+    background-color: #2980b9;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.modal-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.container {
+    width: 100%;
+    padding-right: 0.75rem;
+    padding-left: 0.75rem;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+.text-uppercase {
+    text-transform: uppercase !important;
+  }
+
+.page-section {
+    padding: 6rem 0;
+}
+
+.bg-light {
+    background-color: #f8f9fa !important;
+}
+
+.page-section h3.section-subheading {
+    font-size: 1rem;
+    font-weight: 400;
+    font-style: italic;
+    margin-bottom: 4rem;
+}
+
+.page-section h2.section-heading {
+    font-size: 2.5rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -0.75rem;
+    margin-left: -0.75rem;
+}
+
+.project-caption {
+    padding: 1.5rem;
+    text-align: center;
+    background-color: #fff;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.text-muted {
+    color: #6c757d !important;
+}
+
+.project-item {
+    margin-bottom: 1.5rem !important;
+}
+
+#projects .project-item {
+    max-width: 25rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+#projects .project-item .project-link {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+  }
+#projects .project-item .project-link .project-hover {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity ease-in-out 0.25s;
+  }
+#projects .project-item .project-link .project-hover .project-hover-content {
+    font-size: 1.25rem;
+    color: white;
+  }
+#projects .project-item .project-link:hover .project-hover {
+    opacity: 1;
+  }
+#projects .project-item .project-caption {
+    padding: 1.5rem;
+    text-align: center;
+    background-color: #fff;
+  }
+#projects .project-item .project-caption .project-caption-heading {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 0;
+    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  }
+
+.footer {
+    text-align: center;
+    font-size: 0.9rem;
+    padding-bottom: 1.5rem !important;
+    padding-top: 1.5rem !important;
+}
+
+.align-items-center {
+    align-items: center !important;
+}
+
+.social-media{
+    position: relative;
+    width: 100%;
+    padding-right: 0.75rem;
+    padding-left: 0.75rem;
+}
+
+.btn-social {
+    height: 2.5rem;
+    width: 2.5rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    border-radius: 100%;
+    margin-left: 0.5rem !important;
+    margin-right: 0.5rem !important;
+    color: #fff;
+    background-color: #343a40;
+    border-color: #343a40;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.btn-dark {
+    color: #fff;
+    background-color: #343a40;
+    border-color: #343a40;
+  }
+  .btn-dark:hover {
+    color: #fff;
+    background-color: #23272b;
+    border-color: #1d2124;
+  }
+
+.svg-inline--fa {
+    display: inline-block;
+    font-size: inherit;
+    height: 1em;
+    overflow: visible;
+    vertical-align: -.125em;
+}
+
+.svg-inline--fa.fa-w-16 {
+    width: 1em;
+}
+
+.about-section {
+    background-color: #343a40;
+    color: #fff;
+}
+
+.header-heading {
+    font-size: 3.25rem;
+    font-weight: 700;
+    line-height: 3.25rem;
+    margin-bottom: 2rem;
+    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.header-subheading {
+    font-size: 1.5rem;
+    font-style: italic;
+    line-height: 1.5rem;
+    margin-bottom: 25px;
+    font-weight: 400;
+    font-family: "Droid Serif", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.bg-active .modal {
+    display: block;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.modal {
+    position: fixed;
+    top: auto;
+    left: auto;
+    z-index: 1050;
+    width: 90%;
+    height: 90%;
+    overflow: hidden;
+    outline: 0;
+}
+
+.modal-content {
+    padding-top: 2rem;
+    padding-bottom: 6rem;
+    text-align: center;
+    height: 100%;
+}
+
+.justify-content-center {
+    justify-content: center !important;
+}
+
+.modal-body {
+    position: relative;
+    flex: 1 1 auto;
+    padding: 1rem;
+}
+
+.modal-content h2 {
+    font-size: 3rem;
+    line-height: 3rem;
+}
+
+.list-technologies {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+    margin: auto;
+    padding: 1rem 0;
+    font-size: 32px;
+}
+
+.project-caption-subheading {
+    font-style: italic;
+    font-family: "Droid Serif", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.icon {
+    width: 1.5em;
+}
+
+p.item-intro {
+    font-style: italic;
+    margin-bottom: 2rem;
+    font-family: "Droid Serif", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    line-height: 1.75;
+    margin-bottom: 2rem;
+}
+
+.rounded-circle {
+    width: 14rem;
+    height: 14rem;
+    border: 0.5rem solid rgba(0, 0, 0, 0.1);
+    border-radius: 50% !important;
+}
+
 @media screen and (min-width: 750px) {
 
-    .project-wrapper,
-    .section, 
-    .header {
-        width: 700px;
-    }
 
-    .header {
-        margin-bottom: 50px;
-    }
-
-    .description {
-        width: 80%;
-        margin: auto;
-    }
 
 }
 
 @media screen and (min-width: 1000px) {
 
 
-    .section {
-        width: 950px;
-    }
-
-    .header {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        margin-top: 100px;
-        margin-bottom: 100px;
-        width: 950px;
-    }
-
-    .header-bio {
-        width: 50%;
-        margin-left: 10%;
-    }
-
-    .header-content {
-        padding: 40px;
-    }
-
-    h3, p {
-        font-size: 18px;
-    }
 
 }

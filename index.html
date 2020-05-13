@@ -1,18 +1,299 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Sejin Hwang Portfolio">
     <title>Sejin Hwang Portfolio</title>
-    <link href="https://fonts.googleapis.com/css?family=Domine&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-    <link href="index.css" rel="stylesheet" type="text/css" /> 
+    <script src="https://use.fontawesome.com/releases/v5.12.1/js/all.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet"
+        type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+
+    <link href="index.css" rel="stylesheet" type="text/css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
-    <header class="header container"> 
+
+    <!-- Header -->
+    <header class='header'>
+        <div class='container'>
+            <h1 class='header-heading text-uppercase'> Sejin Hwang </h1>
+            <h2 class='header-subheading'> Full Stack Web Developer</h2>
+        </div>
+    </header>
+
+
+
+
+
+    <!-- Projects -->
+    <section class='page-section bg-light' id='projects'>
+        <div class='container'>
+            <div class='text-center'>
+                <h2 class='section-heading text-uppercase'>Projects</h2>
+                <h3 class='section-subheading text-muted'></h3>
+            </div>
+
+            <div class='row'>
+                <div class='project-item'>
+                    <a class='project-link' id='get-meals'>
+                        <div class='project-hover'>
+                            <div class='project-hover-content'> Explore </i></div>
+                        </div>
+                        <img class='img-fluid' src='images/get-meals.PNG' alt='quiz app screenshot' />
+                    </a>
+                    <div class='project-caption'>
+                        <div class='project-caption-heading'> Get-Meals App </div>
+                        <div class='project-caption-subheading text-muted'> Help your community find meals during the
+                            COVID-19 crisis </div>
+                    </div>
+                </div>
+
+                <div class='project-item'>
+                    <a class='project-link' id='milal-app'>
+                        <div class='project-hover'>
+                            <div class='project-hover-content'> Explore </div>
+                        </div>
+                        <img class='img-fluid' src='images/milal-app.PNG' alt='quiz app screenshot' />
+                    </a>
+                    <div class='project-caption'>
+                        <div class='project-caption-heading'> Milal Volunteers </div>
+                        <div class='project-caption-subheading text-muted'> Track your volunteer hours </div>
+                    </div>
+                </div>
+
+                <div class='project-item'>
+                    <a class='project-link' id='trail-finder'>
+                        <div class='project-hover'>
+                            <div class='project-hover-content'> Explore </div>
+                        </div>
+                        <img class='img-fluid' src='images/trail-finder.PNG' alt='quiz app screenshot' />
+                    </a>
+                    <div class='project-caption'>
+                        <div class='project-caption-heading'> Trail Finder </div>
+                        <div class='project-caption-subheading text-muted'> Find hiking trails nearby to explore </div>
+                    </div>
+                </div>
+
+                <div class='project-item'>
+                    <a class='project-link' id='quiz-app'>
+                        <div class='project-hover'>
+                            <div class='project-hover-content'> Explore </div>
+                        </div>
+                        <img class='img-fluid' src='images/QuizApp-screenshot.png' alt='quiz app screenshot' />
+                    </a>
+                    <div class='project-caption'>
+                        <div class='project-caption-heading'> Quiz App </div>
+                        <div class='project-caption-subheading text-muted'> A short quiz about your friendly
+                            neighborhood Spider-Man </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me -->
+    <section class='page-section about-section' id='about'>
+        <div class='container'>
+            <div class='text-center'>
+                <h2 class='section-heading text-uppercase'>About Me</h2>
+                <img class='rounded-circle' src='images/SejinH.jpeg' alt='Sejin Hwang Portrait'/>
+                <h3 class='section-subheading text-muted'>I’m an aspiring web developer from Seattle currently studying
+                    in the Thinkful curriculum. I love coding
+                    as it has endless possibilities and it puts so much creativity in my hands and challenges me to push
+                    my
+                    limits. There are few things in the world that can give you the same sense of accomplishment and
+                    satisfaction that coding provides.</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class='footer'>
+        <div class='container'>
+            <div class='row align-items-center'>
+                <div class='social-media'>
+                    <a class='btn btn-dark btn-social' href='https://www.linkedin.com/in/sejin-hwang-b307a3194' target='_blank'><i class='fab fa-linkedin-in'></i></a>
+                    <a class='btn btn-dark btn-social' href='https://github.com/seejins' target='_blank'><i class='fab fa-github'></i></a>
+                    <a class='btn btn-dark btn-social' href='mailto: sejinhwang91@gmail.com' target='_blank'><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Quiz App Modal -->
+    <div class="modal-bg">
+        <div class="modal">
+            <div class="modal-content">
+                <span class='modal-close'>X</span>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class='modal-body'>
+                            <h2 class='text-uppercase'>Quiz App</h2>
+                            <p class='item-intro text-muted'>A short quiz about your friendly neighborhood Spider-Man
+                            </p>
+                            <img class='img-fluid' src='images/QuizApp-screenshot.png' alt='quiz app screenshot' />
+                            <p> A simple quiz application where anyone can test their knowledge about Spider-Man.</p>
+                            <ul class='list-technologies'>
+                                <li><i class="fab fa-html5"></i></li>
+                                <li><i class="fab fa-css3-alt"></i></li>
+                                <li><i class="fab fa-js"></i></li>
+                            </ul>
+                            <a class='btn btn-primary' href='https://seejins.github.io/' target='_blank'>
+                                <button class='btn btn-primary'>
+                                    Live Site
+                                </button>
+                            </a>
+                            <a class='btn btn-primary' href='https://github.com/seejins/seejins.github.io' target='_blank'>
+                                <button class='btn btn-primary'>
+                                    Client Repo
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Milal-App Modal-->
+    <div class="milal-app-bg">
+        <div class="modal">
+            <div class="modal-content">
+                <span class='modal-close' id='milalClose'>X</span>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class='modal-body'>
+                            <h2 class='text-uppercase'>Milal App</h2>
+                            <p class='item-intro text-muted'> Track your volunteer hours </p>
+                            <img class='img-fluid' src='images/milal-app.PNG' alt='milal app screenshot' />
+                            <p> Milal App is a full stack application allowing volunteers to track their own hours.
+                                Admin's can also view all their volunteers and the hours they have accumulated. Admin's
+                                can also see when those hours were added and the amount added.</p>
+                            <ul class='list-technologies'>
+                                <li><i class="fab fa-html5"></i></li>
+                                <li><i class="fab fa-css3-alt"></i></li>
+                                <li><i class="fab fa-js"></i></li>
+                                <li><i class="fab fa-node"></i></li>
+                                <li><img class='icon postgreSQL' src='images/postgreSQL.png'></li>
+                                <li><img class='icon jQuery' src='images/jQuery.png'></li>
+                            </ul>
+                            <a class='btn btn-primary' href='https://milal-app.sejinhwang91.now.sh/' target='_blank'>
+                                <button class='btn btn-primary'>
+                                    Live Site
+                                </button>
+                            </a>
+                            <a class='btn btn-primary' href='https://github.com/seejins/milal-client' target='_blank'>
+                                <button class='btn btn-primary'>
+                                    Client Repo
+                                </button>
+                            </a>
+                            <a class='btn btn-primary' href='https://github.com/seejins/milal-server' target='_blank'>
+                                <button class='btn btn-primary'>
+                                    Server Repo
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Get-Meals Modal-->
+    <div class="get-meals-bg">
+        <div class="modal">
+            <div class="modal-content">
+                <span class='modal-close' id='getmealsClose'>X</span>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class='modal-body'>
+                            <h2 class='text-uppercase'>Get-Meals App</h2>
+                            <p class='item-intro text-muted'> Help your community find meals during the COVID-19 crisis
+                            </p>
+                            <img class='img-fluid' src='images/get-meals.PNG' alt='Get-Meals App screenshot' />
+                            <p> Get-Meals is a full stack application, created so that people who were most affected by
+                                COVID-19 are able to find free meals near them. It is a community-driven site, so anyone
+                                can add a location and will be added to the database. User's can also search a location
+                                and find meals near them that the community has added.</p>
+                            <ul class='list-technologies'>
+                                <li><i class="fab fa-html5"></i></li>
+                                <li><i class="fab fa-css3-alt"></i></li>
+                                <li><i class="fab fa-js"></i></li>
+                                <li><i class="fab fa-node"></i></li>
+                                <li><img class='icon postgreSQL' src='images/postgreSQL.png'></li>
+                                <li><img class='icon jQuery' src='images/jQuery.png'></li>
+                            </ul>
+                            <a class='btn btn-primary' href='https://get-meals-app.now.sh/' target='_blank'>
+                                <button class='btn btn-primary'>
+                                    Live Site
+                                </button>
+                            </a>
+                            <a class='btn btn-primary' href='https://github.com/zzboncak/get-meals-client'
+                                target='_blank'>
+                                <button class='btn btn-primary'>
+                                    Client Repo
+                                </button>
+                            </a>
+                            <a class='btn btn-primary' href='https://github.com/zzboncak/get-meals-api' target='_blank'>
+                                <button class='btn btn-primary'>
+                                    Server Repo
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Trail Finder Modal -->
+    <div class="trail-finder-bg">
+        <div class="modal">
+            <div class="modal-content">
+                <span class='modal-close' id='trailfinderClose'>X</span>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class='modal-body'>
+                            <h2 class='text-uppercase'>Trail Finder</h2>
+                            <p class='item-intro text-muted'> Find hiking trails nearby to explore
+                            </p>
+                            <img class='img-fluid' src='images/trail-finder.PNG' alt='Trail Finder App screenshot' />
+                            <p> Trail Finder app allows the user the search a location and find any hiking trails nearby
+                                to explore. The app implements a Google Maps API to show where the trail is relative to
+                                your location. It supplies a short description, the ascent, length, and location using
+                                the Hiking Project API. </p>
+                            <ul class='list-technologies'>
+                                <li><i class="fab fa-html5"></i></li>
+                                <li><i class="fab fa-css3-alt"></i></li>
+                                <li><i class="fab fa-js"></i></li>
+                            </ul>
+                            <a class='btn btn-primary' href='https://jaggersofia.github.io/Trail-Finder/'
+                                target='_blank'>
+                                <button class='btn btn-primary'>
+                                    Live
+                                </button>
+                            </a>
+                            <a class='btn btn-primary' href='https://github.com/JaggerSofia/Trail-Finder'
+                                target='_blank'>
+                                <button class='btn btn-primary'>
+                                    Repo
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- 
+    <header class="header container">
         <div class="header-content">
             <h1>Sejin Hwang.</h1>
             <h2>Web Developer</h2>
@@ -20,12 +301,16 @@
             <h3>Contact:</h3>
             <div class="icons row">
                 <a href="mailto: sejinhwang91@gmail.com"><img src="images/mail-icon.png" alt="mail icon"></a>
-                <a href="https://www.linkedin.com/in/sejin-hwang-b307a3194"><img src="images/linkedin-icon.png" alt="linkedin icon"></a>
+                <a href="https://www.linkedin.com/in/sejin-hwang-b307a3194"><img src="images/linkedin-icon.png"
+                        alt="linkedin icon"></a>
                 <a href="https://github.com/seejins"><img src="images/github-icon.png" alt="GitHub icon"></a>
             </div>
         </div>
         <div class="header-bio">
-            <p>I’m an aspiring web developer from Seattle currently studying in the Thinkful curriculum.  I love coding as it has endless possibilities and it puts so much creativity in my hands and challenges me to push my limits.  There are few things in the world that can give you the same sense of accomplishment and satisfaction that coding provides.</p>
+            <p>I’m an aspiring web developer from Seattle currently studying in the Thinkful curriculum. I love coding
+                as it has endless possibilities and it puts so much creativity in my hands and challenges me to push my
+                limits. There are few things in the world that can give you the same sense of accomplishment and
+                satisfaction that coding provides.</p>
         </div>
     </header>
 
@@ -36,11 +321,13 @@
 
                 <div class="project-container">
                     <div class="screenshot">
-                        <a href="https://seejins.github.io"><img src="images/QuizApp-screenshot.png" alt="quiz application screenshot"></a>
+                        <a href="https://seejins.github.io"><img src="images/QuizApp-screenshot.png"
+                                alt="quiz application screenshot"></a>
                     </div>
                     <div class="description">
                         <h3>Description: </h3>
-                        <p>A simple quiz application that Spider-Man fans can test their knowledge with.  Created using jQuery and HTML/CSS.</p>
+                        <p>A simple quiz application that Spider-Man fans can test their knowledge with. Created using
+                            jQuery and HTML/CSS.</p>
                         <a href="https://github.com/seejins/Portfolio">Repo</a>
                         <a href="https://seejins.github.io/Portfolio/">Live Site</a>
                     </div>
@@ -51,8 +338,12 @@
 
     <footer class="footer row">
         <a href="mailto: sejinhwang91@gmail.com"><img src="images/mail-icon.png" alt="mail icon"></a>
-        <a href="https://www.linkedin.com/in/sejin-hwang-b307a3194"><img src="images/linkedin-icon.png" alt="linkedin icon"></a>
+        <a href="https://www.linkedin.com/in/sejin-hwang-b307a3194"><img src="images/linkedin-icon.png"
+                alt="linkedin icon"></a>
         <a href="https://github.com/seejins"><img src="images/github-icon.png" alt="GitHub icon"></a>
-    </footer>
+    </footer> -->
+
+    <script src="scripts.js"></script>
 </body>
+
 </html>
